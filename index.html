@@ -1,102 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Social</title>
-   <style>
-        /* Estilo do corpo do documento */
-        html, body {
-            background-color: #f5f5f5;
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            color: #333333;
-        }
-
-        /* Estilo do cabeçalho */
-        #cabecalho {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 5px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 400px;
-        }
-
-        /* Estilo do círculo da foto de perfil */
-        .circle-container {
-            width: 40%;
-            height: auto;
-            max-width: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            border: 5px solid #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Estilo da foto de perfil */
-        .circle-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Estilo dos links de rede social */
-        .social-link {
-            display: inline-block;
-            margin: 10px;
-            text-decoration: none;
-            color: #333333;
-            transition: color 0.3s ease;
-        }
-
-        .social-link img {
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-
-        .social-link:hover {
-            color: #ff5500;
-        }
-
-        /* Estilo do endereço */
-        address {
-            font-style: normal;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Card Social</title>
 </head>
+
 <body>
-    <div id="cabecalho">
-        <h1>Minhas Redes Sociais</h1>
-        <div class="circle-container">
-            <picture>
-                <source media="(max-width: 350px)" srcset="favicon_io/foto-perfil-150.png" type="image/png">
-                <img src="foto-perfil.png" alt="Foto De Perfil">
-            </picture>
+    <main class="card">
+        <div class="cabecalho">
+            <h1>Minhas Redes Sociais</h1>
+            <img src="./images/__perfil/perfil-fixo.png" alt="Foto De Perfil" class="imagem__perfil">
+            <h2>Quem sou eu?</h2>
+            <p>Meu nome é <strong>Ericky Dias</strong>, sou <em>Programador Junior</em> em aprendizagem e hoje trabalho
+                como <strong>Sócio Gerente</strong> da empresa <strong><em>Heavens Hair Cabeleireiros</em></strong>.
+                Tenho 24 anos de idade e estou cursando programação na instituição de ensino TripleTen.
+            <h2>Como falar comigo</h2>
+            <button class="botao">
+                <a class="social-link" href="https://www.instagram.com/ericky_dias/" rel="external" target="_blank">
+                    <img src="./images/__icon/instagram-icon.png" alt="Ícone do Instagram" class="icon-social">Instagram
+                </a>
+            </button>
+            <button class="botao">
+                <a class="social-link" href="https://wa.link/lhhw5n" rel="external" target="_blank">
+                    <img src="./images/__icon/whatsapp-icon.png" alt="Ícone do WhatsApp" class="icon-social">WhatsApp
+                </a>
+            </button>
+            <button class="botao">
+                <a class="social-link" href="https://github.com/dev-erickydias" rel="external" target="_blank">
+                    <img src="./images/__icon/github-icon.png" alt="Ícone do github" class="icon-social">GitHub</a>
+            </button>
+            <p>Também pode me encontrar no seguinte endereço:
+            <address>Rua Francisco Thomas Da Costa nº 3, Entre Campos, Lisboa, Portugal.</address>
+            </p>
         </div>
-        <h2>Quem sou eu?</h2>
-        <p>Meu nome é <strong>Ericky Dias</strong>, sou <em>Programador Junior</em> em aprendizagem e hoje trabalho como <strong>Sócio Gerente</strong> da empresa <strong><em>Heavens Hair Cabeleireiros</em></strong>. Tenho 24 anos de idade e montei minha primeira empresa aos 20 anos como sócio. Hoje esta empresa ainda está ativa e é nela que exerço os cargos de <strong>Gestor</strong> e de <strong>Marketing</strong>.</p>
-        <h2>Como falar comigo</h2>
-        <a class="social-link" href="https://www.instagram.com/ericky_dias/" rel="external" target="_blank">
-            <img src="instagram-20.png" alt="Ícone do Instagram">Instagram
-        </a>
-        <a class="social-link" href="https://wa.link/lhhw5n" rel="external" target="_blank">
-            <img src="what-cone-20.png" alt="Ícone do WhatsApp">WhatsApp
-        </a>
-        <p>Também pode me encontrar no seguinte endereço:<address>Rua Francisco Thomas Da Costa nº 3, Entre Campos, Lisboa, Portugal.</address></p>
-    </div>
+    </main>
 </body>
+
 </html>
