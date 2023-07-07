@@ -59,4 +59,7 @@
     
 }
 /* Estilo do endereço */
-
+.logo__hc {
+  display: flex;
+  justify-content: flex-end;
+}
