@@ -62,4 +62,6 @@
 .logo__hc {
   display: flex;
   justify-content: flex-end;
+  display: -webkit-flex;
+  -webkit-justify-content: flex-end;
 }
