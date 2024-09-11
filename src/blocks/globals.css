@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+li{
+
+}
+:root {
+  /* Variável para o gradiente dos títulos */
+  --titulo-gradient: linear-gradient(
+    90deg,
+    #052555 0%,
+    #0666c5 30%,
+    #0580f2 100%
+  );
+
+  /* Variável para a cor dos textos normais */
+  --texto-normal: #e2e8f0;
+}
+
+
+body {
+  background-color: #171717;
+  opacity: 0.8;
+  color: #e2e8f0;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0;
+  padding: 0;
+  max-width: 1500px;
+}
+.title {
+  background: var(--titulo-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.text {
+  color: var(--texto-normal);
+}
+
+
+@import url(../blocks/header.css);
+@import url(../blocks/nav__menu.css);

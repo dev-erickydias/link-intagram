@@ -1,0 +1,31 @@
+.nav__menu{
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+    background-color: #262626;
+    padding: 20px 0;
+    border-radius: 25px;
+}
+.nav__title{
+    margin: 0 50px;
+}
+.nav__menu_list{
+    display: flex;
+    gap: 24px;
+}
+.nav__link{
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.nav__link:hover{
+    color: #2563EB;
+}
+.nav__btn{
+    cursor: pointer;
+    margin: -5px 48px 0 40px;
+    color: #1E40AF;
+    border: 1px solid #1E40AF;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
