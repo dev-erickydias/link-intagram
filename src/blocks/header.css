@@ -1,3 +1,23 @@
 .header{
     margin: 24px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header__contain{
+   margin: 200px 0 0;
+}
+.header__contain_subtitle{
+    font-size: 24px;
+    line-height: 32px;
+    width: 80%;
+}
+.header__contain_title{
+    font-size: 58px;
+    line-height: 48px;
+    width: 80%;
+}
+.header__contain_btns{
+    margin: 10px 0 0;
+    display: flex;
+    gap: 16px;
 }

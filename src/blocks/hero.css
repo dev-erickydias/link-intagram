@@ -1,0 +1,31 @@
+.container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  width: calc(70px * 8 + 10px * 7); /* Tamanho total das imagens e margens */
+  animation: slide 20s linear infinite;
+}
+
+.slider img {
+  width: 64px;
+  height: 65px; /* Ajuste o tamanho da imagem conforme necessário */
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(
+      -200%
+    ); /* Move 50% do slider para dar a sensação de repetição */
+  }
+}

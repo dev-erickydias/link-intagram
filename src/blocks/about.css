@@ -1,0 +1,34 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__image{
+
+}
+.about__btn{
+    margin: 24px 0 0;
+    width: 192px;
+}
+.about__texts{
+    width: 800px;
+}
+.about__title{
+    margin: 150px 0 16px;
+    text-align: end;
+    width: 95%;
+    font-size: 48px;
+}
+.about__description{
+    font-size: 16px;
+    margin: 0 0 16px;
+    text-align: justify;
+}
+.about__description_span{
+    color: #2563EB;
+}
