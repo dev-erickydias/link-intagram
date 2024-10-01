@@ -36,7 +36,7 @@ export default function Header() {
       </div>
       <img
         className="header__contain_img"
-        src="/image/Sem_titulo-2.png"
+        src="/image/header_image.png"
         alt="Imagem de fundo"
       />
     </header>
