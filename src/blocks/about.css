@@ -1,0 +1,101 @@
+/* Definição da animação */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Translada o elemento levemente para baixo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Traz o elemento para a posição original */
+    }
+}
+
+/* Classe para aplicar a animação */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Mobile-first: Estilos para telas menores */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__image {
+    width: 100%;
+    max-width: 300px; /* Ajusta a largura da imagem para telas menores */
+}
+
+.about__btn {
+    margin: 24px 0;
+    width: 160px; /* Largura reduzida para dispositivos móveis */
+}
+
+.about__texts {
+    width: 100%;
+    padding: 0 10px; /* Adiciona padding para dar espaçamento nas laterais */
+}
+
+.about__title {
+    margin: 50px 0 16px;
+    text-align: center;
+    font-size: 32px; /* Fonte menor para telas menores */
+}
+
+.about__description {
+    font-size: 14px;
+    text-align: justify;
+    margin: 0 0 16px;
+}
+
+.about__description_span {
+    color: #2563EB;
+}
+
+/* Estilo para telas maiores (768px a 1199px) */
+@media (min-width: 768px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px 0 0;
+    }
+
+    .about__texts {
+        width: 600px;
+    }
+
+    .about__title {
+        font-size: 40px;
+        text-align: right;
+    }
+
+    .about__btn {
+        width: 180px;
+    }
+}
+
+/* Estilo para telas maiores (1200px e acima) */
+@media (min-width: 1200px) {
+    
+    .about__texts {
+        width: 800px;
+    }
+
+    .about__title {
+        font-size: 48px;
+        text-align: right;
+    }
+
+    .about__btn {
+        width: 192px;
+    }
+}

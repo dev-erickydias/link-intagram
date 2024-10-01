@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #e2e8f0;
+}
+
+ul{
+  list-style: none;
+}
+
+:root {
+  --titulo-gradient: linear-gradient(
+    10deg,
+    #052555 25%,
+    #0666c5 75%,
+    #0580f2 100%
+  );
+  
+  --texto-normal: #e2e8f0;
+}
+
+.myapp-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.myapp-caveat {
+  font-family: "Caveat", system-ui;
+}
+body {
+  background-color: #171717;
+  opacity: 0.8;
+  color: #e2e8f0;
+  font-family: "Open Sans", sans-serif;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0;
+  padding: 0;
+  max-width: 1500px;
+}
+.title {
+  background: var(--titulo-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.text {
+  color: var(--texto-normal);
+}
+
+.btn{
+  cursor: pointer;
+  color: #1E40AF;
+  border: 1px solid #1E40AF;
+  border-radius: 25px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+@import url(../blocks/header.css);
+@import url(../blocks/nav__menu.css);
+@import url(../blocks/hero.css);
+@import url(../blocks/about.css);
+@import url(../blocks/project.css);
+@import url(../blocks/footer.css);

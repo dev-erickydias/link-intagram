@@ -1,19 +1,36 @@
-# SINGLE PAGE
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-**Este projeto contém responsividade.** Ele foi criado para expecificamente aparelhos de celular com um link de cartao de redes sociais.
+## Getting Started
 
-## Neste projeto foram utilizadas as seguintes tecnologias:
+First, run the development server:
 
-**HTML** <img align="center" alt="Ericky-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"><br>
-**CSS** <img align="center" alt="Ericky-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### aqui você podera ver como ficou o site!<br>
-https://erickydias.com/
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Redes Sociais
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/ericky_dias/)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=351932910525&text=Vim%20pelo%20seu%20link%20no%20site%F0%9F%98%98)
-<br><br>
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-> "Esse projeto serve para mostrar que mesmo com o mínimo de conhecimento, você é capaz de criar algo fantástico."
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
