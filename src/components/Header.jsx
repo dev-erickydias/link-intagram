@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="header">
+    <header className="header fade-in">
       <div className="header__contain">
-        <h2 className="myapp-open-sans header__contain_subtitle">Precisa de um</h2>
+        <h2 className="myapp-open-sans header__contain_subtitle">Drecisa de um</h2>
         <h2 className="title myapp-open-sans header__contain_title">Desenvolvedor Front End</h2>
-        <h2 className="myapp-open-sans header__contain_subtitle">Para transfomar suas ideias em experiências incriveis?</h2>
+        <h2 className="myapp-open-sans header__contain_subtitle">Para transformar suas ideias em experiências incríveis?</h2>
         <div className="header__contain_btns">
           <Link
             className="header__contain__btn"
@@ -35,9 +35,9 @@ export default function Header() {
         </div>
       </div>
       <img
-      className="header__contain_img"
+        className="header__contain_img"
         src="/image/Sem_titulo-2.png"
-        alt=""
+        alt="Imagem de fundo"
       />
     </header>
   );

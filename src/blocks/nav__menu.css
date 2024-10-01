@@ -1,30 +1,122 @@
+/* Mobile-first design (para telas menores) */
 .nav__menu {
   display: flex;
-  margin-top: 24px;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px;
   background-color: #262626;
-  padding: 20px 0;
-  border-radius: 25px;
-}
-.nav__title {
-  margin: 0 50px;
-  font-size: 26px;
-  color: #0666c5;
-}
-.nav__menu_list {
-  display: flex;
-  gap: 24px;
-}
-.nav__link {
-  margin-top: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
+  border-radius: 15px;
+  position: relative;
+  margin: 20px 0 0;
 }
 
-.nav__link:hover {
+.nav__title {
+  font-size: 22px;
+  color: #0666c5;
+}
+
+/* Ocultar a lista de navegação no mobile */
+.nav__menu_list {
+  display: none;
+}
+
+/* Menu hambúrguer (visível apenas no mobile) */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger__line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Estilos do popup de navegação */
+.nav__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.nav__popup_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.nav__popup_link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin: 10px 0 0 ;
+}
+
+.nav__popup_link:hover {
   color: #2563eb;
 }
-.nav__btn {
-  margin: -5px 48px 0 40px;
-  
+
+.nav__popup_btn {
+  padding: 10px 20px;
+  background-color: #0666c5;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav__popup_btn:hover {
+  background-color: #2563eb;
+}
+
+/* Estilos para telas maiores (768px em diante) */
+@media (min-width: 768px) {
+  .nav__menu_list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .hamburger {
+    display: none; /* Esconder o hambúrguer no desktop */
+  }
+
+  .nav__popup {
+    display: none; /* Popup não necessário em telas maiores */
+  }
+
+  .nav__title {
+    font-size: 26px;
+  }
+
+  .nav__btn {
+    margin-left: 20px;
+  }
+}
+
+/* Estilos para telas a partir de 1200px */
+@media (min-width: 1200px) {
+  .nav__title {
+    font-size: 32px;
+  }
+
+  .nav__menu_list {
+    gap: 30px;
+  }
+
+  .nav__btn {
+    padding: 10px 30px;
+  }
 }

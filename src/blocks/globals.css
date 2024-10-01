@@ -62,3 +62,5 @@ body {
 @import url(../blocks/nav__menu.css);
 @import url(../blocks/hero.css);
 @import url(../blocks/about.css);
+@import url(../blocks/project.css);
+@import url(../blocks/footer.css);

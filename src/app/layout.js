@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <div className="page">{children}</div>
+        <div className="page myapp-open-sans">{children}</div>
       </body>
     </html>
   );

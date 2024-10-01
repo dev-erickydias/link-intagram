@@ -1,23 +1,112 @@
-.header{
-    margin: 24px 0 0;
-    display: flex;
+/* Definição da animação */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Translada o elemento levemente para cima */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Retorna à posição original */
+  }
+}
+
+/* Classe para aplicar a animação */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Estilos mobile-first */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.header__contain {
+  margin: 20px 0 0;
+}
+
+.header__contain_title {
+  font-size: 24px; /* Tamanho de fonte para telas pequenas */
+  margin: 10px 0 0;
+  text-align: justify;
+}
+
+.header__contain_subtitle {
+  font-size: 18px;
+  margin: 8px 0 0;
+}
+
+.header__contain_btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.header__contain__btn img {
+  width: 32px;
+  height: auto;
+}
+
+.header__contain_img {
+  width: 100%;
+  max-width: 300px; /* Ajusta a largura da imagem no mobile */
+  margin-top: 20px;
+}
+
+/* Estilos para telas de 768px a 1199px */
+@media (min-width: 768px) {
+  .header__contain_title {
+    font-size: 32px;
+  }
+
+  .header__contain_subtitle {
+    font-size: 20px;
+  }
+
+  .header__contain_btns {
+    margin-top: 30px;
+  }
+
+  .header__contain_img {
+    max-width: 400px;
+  }
+}
+
+/* Estilos para telas a partir de 1200px */
+@media (min-width: 1200px) {
+  .header {
+    flex-direction: row;
     justify-content: space-between;
-}
-.header__contain{
-   margin: 200px 0 0;
-}
-.header__contain_subtitle{
+    padding: 40px;
+    text-align: left;
+  }
+
+  .header__contain {
+    margin: 0;
+  }
+
+  .header__contain_title {
+    font-size: 48px;
+  }
+
+  .header__contain_subtitle {
     font-size: 24px;
-    line-height: 32px;
-    width: 80%;
-}
-.header__contain_title{
-    font-size: 58px;
-    line-height: 48px;
-    width: 80%;
-}
-.header__contain_btns{
-    margin: 10px 0 0;
-    display: flex;
-    gap: 16px;
+  }
+
+  .header__contain_btns {
+    margin-top: 40px;
+    justify-content: left;
+  }
+  .header__contain__btn img {
+    width: 100%;
+    height: auto;
+  }
+  .header__contain_img {
+    max-width: 500px;
+  }
 }
