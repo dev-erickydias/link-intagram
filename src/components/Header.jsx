@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="header fade-in">
       <div className="header__contain">
-        <h2 className="myapp-open-sans header__contain_subtitle">Drecisa de um</h2>
+        <h2 className="myapp-open-sans header__contain_subtitle">Precisa de um</h2>
         <h2 className="title myapp-open-sans header__contain_title">Desenvolvedor Front End</h2>
         <h2 className="myapp-open-sans header__contain_subtitle">Para transformar suas ideias em experiências incríveis?</h2>
         <div className="header__contain_btns">
