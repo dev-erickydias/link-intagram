@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #e2e8f0;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -16,22 +16,22 @@ ul{
     #0666c5 75%,
     #0580f2 100%
   );
-  
+
   --texto-normal: #e2e8f0;
 }
 
 .myapp-open-sans {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .myapp-caveat {
-  font-family: "Caveat", system-ui;
+  font-family: 'Caveat', system-ui;
 }
 body {
   background-color: #171717;
   opacity: 0.8;
   color: #e2e8f0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .page {
   display: flex;
@@ -49,10 +49,10 @@ body {
   color: var(--texto-normal);
 }
 
-.btn{
+.btn {
   cursor: pointer;
-  color: #1E40AF;
-  border: 1px solid #1E40AF;
+  color: #1e40af;
+  border: 1px solid #1e40af;
   border-radius: 25px;
   text-transform: uppercase;
   padding: 10px 20px;
